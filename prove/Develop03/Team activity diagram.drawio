@@ -1,0 +1,31 @@
+<mxfile host="app.diagrams.net" modified="2023-05-04T03:37:40.114Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="xJmtf4clypkspI5v-ffm" version="21.2.7" type="device">
+  <diagram name="Page-1" id="KrMrLgy96qi7bCeVeAlq">
+    <mxGraphModel dx="794" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ES8kigX_uqAZVWsV1j8_-2" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="70" width="1110" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ES8kigX_uqAZVWsV1j8_-3" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ES8kigX_uqAZVWsV1j8_-5" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="445" y="100" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ES8kigX_uqAZVWsV1j8_-7" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="770" y="100" width="240" height="240" as="geometry" />
+        </mxCell>
+        <mxCell id="ES8kigX_uqAZVWsV1j8_-8" value="&lt;h1&gt;Scripture&lt;/h1&gt;&lt;p&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;/p&gt;&lt;p&gt;_scritptureText: string&lt;/p&gt;&lt;p&gt;_reference: Reference&lt;/p&gt;&lt;p&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;/p&gt;&lt;p&gt;DisplayScripture(): string&lt;/p&gt;&lt;p&gt;Console.Clear()&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="100" width="240" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ES8kigX_uqAZVWsV1j8_-9" value="&lt;h1&gt;Word&lt;/h1&gt;&lt;p&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;/p&gt;&lt;p&gt;_scriptureList: List&lt;/p&gt;&lt;p&gt;_wordIndex: int&lt;/p&gt;&lt;p&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;/p&gt;&lt;p&gt;SplitScripture(): List&lt;/p&gt;&lt;p&gt;ReplaceWord():&lt;/p&gt;&lt;p&gt;UpdateList(): List&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="445" y="100" width="245" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ES8kigX_uqAZVWsV1j8_-11" value="&lt;h1&gt;Reference&lt;/h1&gt;&lt;p&gt;&lt;b&gt;Attributes&lt;/b&gt;&lt;/p&gt;&lt;p&gt;_reference: string&lt;/p&gt;&lt;p&gt;&lt;b&gt;Methods&lt;/b&gt;&lt;/p&gt;&lt;p&gt;GetReference(): String&lt;/p&gt;&lt;p&gt;SetReference(): String&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="100" width="240" height="280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
