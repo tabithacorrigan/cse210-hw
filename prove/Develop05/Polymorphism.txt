@@ -1,0 +1,1 @@
+Polymorphism means to allow a method or object to act differently depending on the context of a situation. 
