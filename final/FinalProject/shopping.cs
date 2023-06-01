@@ -1,22 +1,40 @@
 public class Shopping {
     
-    private string _item;
+    private string _itemName;
     private bool _isPurchased;
 
-    public string Item { get => _item; set => _item = value; }
+    public string ItemName { get => _itemName; set => _itemName = value; }
     public bool IsPurchased { get => _isPurchased; set => _isPurchased = value; }
 
-    public Shopping(string item, bool isPurchased) {
-        _item = item;
+    public Shopping(string itemName, bool isPurchased) {
+        _itemName = itemName;
         _isPurchased = isPurchased;
     }
 
-    public void ClearItem() {
-
-        Console.WriteLine("Shopping item cleared");
+    public Shopping() {
+        
     }
 
     public void PurchaseItem() {
-        Console.WriteLine("Item purchased");
+        this.IsPurchased = true;
+    }
+
+    public void NewItem(string name) {
+
+        this.ItemName = name;
+        this.IsPurchased = false;
+
+    }
+
+    public string GetItem() {
+
+        string retVal = "";
+
+        string purchasedValue = this.IsPurchased?"X":" ";
+        retVal = ($"{this.ItemName} [{purchasedValue}]");
+
+
+        return retVal;
+
     }
 }

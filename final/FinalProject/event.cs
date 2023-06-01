@@ -6,22 +6,41 @@ public class Event : Task {
     public string Location { get => _location; set => _location = value; }
     public string Time { get => _time; set => _time = value; }
 
-     public Event(string name, string description, bool isComplete, string location, string time) : base(name, description, isComplete) {
+    public Event(string name, bool isComplete, string location, string time) : base(name, isComplete) {
 
     }
 
-    public override void CompleteTask()
-    {
-        Console.WriteLine("Task Completed");
+    public Event() {
+
     }
 
     public override void NewTask()
     {
-        Console.WriteLine("New Task created");
+        Console.WriteLine("What event are you attending? ");
+        string name = Console.ReadLine();
+        Console.WriteLine("What it the location for this event (school, work, etc)? ");
+        string location = Console.ReadLine();
+        Console.WriteLine("What time is the event? ");
+        string time = Console.ReadLine();
+        Console.WriteLine();
+
+        this.Name = name;
+        this.Location = location;
+        this.Time = time;
+        this.IsComplete = false;
+
     }
 
-    public override void ClearTask()
-    {
-        Console.WriteLine("Task Cleared");
+    public override string GetTask() {
+        string retVal = "";
+
+        string completedValue = this.IsComplete?"X":" ";
+        retVal = ($"Event: {this.Name} ({this.Location} at {this.Time}) [{completedValue}]");
+
+
+        return retVal;
+
     }
+
+
 }

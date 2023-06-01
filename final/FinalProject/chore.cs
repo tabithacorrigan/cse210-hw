@@ -1,21 +1,35 @@
 public class Chore : Task {
     
-    public Chore(string name, string description, bool isComplete) : base(name, description, isComplete) {
+    public Chore(string name, bool isComplete) : base(name, isComplete) {
 
     }
 
-    public override void CompleteTask()
-    {
-        Console.WriteLine("Task Completed");
+    public Chore() {
+
     }
 
     public override void NewTask()
     {
-        Console.WriteLine("New Task created");
+        Console.WriteLine("What chore needs completed? ");
+        string name = Console.ReadLine();
+        Console.WriteLine();
+
+        this.Name = name;
+        this.IsComplete = false;
+
     }
 
-    public override void ClearTask()
-    {
-        Console.WriteLine("Task Cleared");
+    public override string GetTask() {
+        string retVal = "";
+
+        string completedValue = this.IsComplete?"X":" ";
+        retVal = ($"Chore: {this.Name} [{completedValue}]");
+
+
+        return retVal;
+
     }
+
+
+
 }

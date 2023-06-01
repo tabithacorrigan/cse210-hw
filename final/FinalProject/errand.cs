@@ -4,23 +4,39 @@ public class Errand : Task {
 
     public string Location { get => _location; set => _location = value; }
 
-    public Errand(string name, string description, bool isComplete, string location) : base(name, description, isComplete) {
+    public Errand(string name, bool isComplete, string location) : base(name, isComplete) {
 
     }
 
-    public override void CompleteTask()
-    {
-        Console.WriteLine("Task Completed");
+    public Errand() {
+
     }
 
     public override void NewTask()
     {
-        Console.WriteLine("New Task created");
+        Console.WriteLine("What errand needs ran? ");
+        string name = Console.ReadLine();
+        Console.WriteLine("What it the location for this task (school, work, etc)? ");
+        string location = Console.ReadLine();
+        Console.WriteLine();
+
+        this.Name = name;
+        this.Location = location;
+        this.IsComplete = false;
+
     }
 
-    public override void ClearTask()
-    {
-        Console.WriteLine("Task Cleared");
+    public override string GetTask() {
+        string retVal = "";
+
+        string completedValue = this.IsComplete?"X":" ";
+        retVal = ($"Errand: {this.Name} ({this.Location}) [{completedValue}]");
+
+
+        return retVal;
+
     }
+
+
     
 }
